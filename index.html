@@ -3,43 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Vakitim</title>
 
 <style>
 body{
 margin:0;
-font-family:Arial,sans-serif;
+font-family:Arial;
 background:#0f7a44;
 color:white;
 }
 
 header{
-padding:25px;
 text-align:center;
-font-size:32px;
+font-size:35px;
 font-weight:bold;
+padding:25px;
 }
 
 .card{
 background:white;
 color:black;
 margin:20px;
-border-radius:20px;
 padding:25px;
+border-radius:20px;
 }
 
 .vakit{
 display:flex;
 justify-content:space-between;
+font-size:22px;
 padding:15px 0;
 border-bottom:1px solid #ddd;
-font-size:22px;
 }
 
-#durum{
-text-align:center;
+button{
+margin-top:15px;
 padding:10px;
+font-size:18px;
 }
 </style>
 </head>
@@ -48,184 +48,90 @@ padding:10px;
 
 <header>🕌 Vakitim</header>
 
-<div id="durum">📍 Konum alınıyor...</div>
+<div id="durum" style="text-align:center">
+📍 Konum alınıyor...
+</div>
 
 <div class="card">
 
-<h1 id="sehir">Konumunuz</h1>
+<h1 id="sehir">Namaz Vakitleri</h1>
 
-<div class="vakit" id="satir-imsak">
-<span>İmsak</span>
-<span id="imsak">--:--</span>
-</div>
+<div class="vakit"><span>İmsak</span><span id="imsak">--:--</span></div>
+<div class="vakit"><span>Güneş</span><span id="gunes">--:--</span></div>
+<div class="vakit"><span>Öğle</span><span id="ogle">--:--</span></div>
+<div class="vakit"><span>İkindi</span><span id="ikindi">--:--</span></div>
+<div class="vakit"><span>Akşam</span><span id="aksam">--:--</span></div>
+<div class="vakit"><span>Yatsı</span><span id="yatsi">--:--</span></div>
 
-<div class="vakit">
-<span>Güneş</span>
-<span id="gunes">--:--</span>
-</div>
+<button onclick="bildirim()">🔔 Bildirim Aç</button>
 
-<div class="vakit" id="satir-ogle">
-<span>Öğle</span>
-<span id="ogle">--:--</span>
-</div>
+<h3 id="sayac">
+Sonraki vakit hesaplanıyor...
+</h3>
 
-<div class="vakit" id="satir-ikindi">
-<span>İkindi</span>
-<span id="ikindi">--:--</span>
 </div>
 
-<div class="vakit" id="satir-aksam">
-<span>Akşam</span>
-<span id="aksam">--:--</span>
-</div>
-
-<div class="vakit" id="satir-yatsi">
-<span>Yatsı</span>
-<span id="yatsi">--:--</span>
-</div>
-<button id="bildirimButon" onclick="bildirimIzniIste()">
-  🔔 Bildirimleri Aç
-</button>
-<p style="text-align:center;">
-🔔 Vakit geldiğinde uyarı alacaksınız
-</p>
-<div id="sayac" style="text-align:center; margin-top:25px; font-size:22px; font-weight:bold;">
-  Sonraki vakit hesaplanıyor...
-</div>
-</div>
 
 <script>
-async function bildirimIzniIste() {
 
-if (!("Notification" in window)){
-alert("Bu cihaz bildirimleri desteklemiyor.");
-return;
-}
+function bildirim(){
 
-const izin = await Notification.requestPermission();
-
-if(izin==="granted"){
-
-document.getElementById("bildirimButon").innerText =
-"🔔 Bildirimler Açık";
-
-new Notification("Vakitim",{
-body:"Namaz vakitleri için bildirimler açıldı 🕌"
-});
+alert("Bildirim özelliği yakında aktif olacak 🕌");
 
 }
 
-}
-
-function konumAl(){
 
 navigator.geolocation.getCurrentPosition(
+function(pos){
 
-function(position){
+let lat=pos.coords.latitude;
+let lon=pos.coords.longitude;
 
-const lat = position.coords.latitude;
-const lon = position.coords.longitude;
-
-vakitleriGetir(lat, lon);
+vakitGetir(lat,lon);
 
 },
+function(){
 
-function(error){
-
-document.getElementById("durum").innerText =
+document.getElementById("durum").innerHTML=
 "📍 Konum alınamadı";
 
-alert("Konum izni verin ve tekrar deneyin.");
+vakitGetir(41.0082,28.9784);
 
 }
-
 );
 
-}
 
+async function vakitGetir(lat,lon){
 
-async function vakitleriGetir(lat, lon){
-
-document.getElementById("durum").innerText =
+document.getElementById("durum").innerHTML=
 "📍 Konum bulundu";
 
-const adres =
+
+let url=
 `https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=13`;
 
-const cevap = await fetch(adres);
-const veri = await cevap.json();
 
-const vakit = veri.data.timings;
-const namazlar = [
-  ["İmsak", vakit.Fajr, "satir-imsak"],
-  ["Öğle", vakit.Dhuhr, "satir-ogle"],
-  ["İkindi", vakit.Asr, "satir-ikindi"],
-  ["Akşam", vakit.Maghrib, "satir-aksam"],
-  ["Yatsı", vakit.Isha, "satir-yatsi"]
-];
+let cevap=await fetch(url);
 
-function sayaciGuncelle() {
-  const simdi = new Date();
-  let sonraki = null;
+let veri=await cevap.json();
 
-  for (const namaz of namazlar) {
-    const saat = namaz[1].split(":");
-    const zaman = new Date();
+let v=veri.data.timings;
 
-    zaman.setHours(
-      Number(saat[0]),
-      Number(saat[1]),
-      0,
-      0
-    );
 
-    if (zaman > simdi) {
-      sonraki = {
-        ad: namaz[0],
-        zaman: zaman
-      };
-      document.getElementById("satir-ikindi").style.background = "#d8f3dc";
-      break;
-    }
-  }
+document.getElementById("imsak").innerHTML=v.Fajr;
+document.getElementById("gunes").innerHTML=v.Sunrise;
+document.getElementById("ogle").innerHTML=v.Dhuhr;
+document.getElementById("ikindi").innerHTML=v.Asr;
+document.getElementById("aksam").innerHTML=v.Maghrib;
+document.getElementById("yatsi").innerHTML=v.Isha;
 
-  if (!sonraki) {
-    document.getElementById("sayac").innerText =
-      "🌙 Bugünün vakitleri tamamlandı";
-    return;
-  }
 
-  const fark = sonraki.zaman - simdi;
-  const saat = Math.floor(fark / 3600000);
-  const dakika = Math.floor((fark % 3600000) / 60000);
-const saniye = Math.floor((fark % 60000) / 1000);
-if (fark <= 1000) {
-  document.getElementById("sayac").innerText =
-    "🕌 " + sonraki.ad + " vakti girdi";
-} else {
-  document.getElementById("sayac").innerText =
-    "⌛ " + sonraki.ad + " vaktine " +
-    saat + " saat " + dakika + " dakika " +
-    saniye + " saniye kaldı";
-}
-saniye + " saniye kaldı";
-}
+document.getElementById("sehir").innerHTML=
+veri.data.meta.timezone.split("/")[1]
++" Namaz Vakitleri";
 
-sayaciGuncelle();
-setInterval(sayaciGuncelle, 1000);
-const sehirAdi = veri.data.meta.timezone.split("/").pop();
-document.getElementById("imsak").innerText = vakit.Fajr;
-document.getElementById("gunes").innerText = vakit.Sunrise;
-document.getElementById("ogle").innerText = vakit.Dhuhr;
-document.getElementById("ikindi").innerText = vakit.Asr;
-document.getElementById("aksam").innerText = vakit.Maghrib;
-document.getElementById("yatsi").innerText = vakit.Isha;
-document.getElementById("sehir").innerText =
-sehirAdi + " Namaz Vakitleri";
 
 }
-
-konumAl();
 
 </script>
 
