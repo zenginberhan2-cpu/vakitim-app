@@ -132,6 +132,25 @@ veri.data.meta.timezone.split("/")[1]
 
 
 }
+async function bildirim() {
+      if (!("Notification" in window)) {
+          alert("Bu cihaz bildirim özelliğini desteklemiyor.");
+              return;
+                }
+
+                  const izin = await Notification.requestPermission();
+
+                    if (izin === "granted") {
+                        new Notification("🕌 Vakitim", {
+                              body: "Namaz vakti bildirimleri açıldı 🔔"
+                                  });
+
+                                      alert("🔔 Bildirimler açıldı");
+                                        } else {
+                                            alert("Bildirim izni verilmedi.");
+                                              }
+                                              }
+}
 
 </script>
 
