@@ -68,6 +68,36 @@ font-size:18px;
 <h3 id="sayac">
 Sonraki vakit hesaplanıyor...
 </h3>
+function geriSayim(saat) {
+    let hedef = new Date();
+      let [saatDeger, dakika] = saat.split(":");
+
+        hedef.setHours(saatDeger);
+          hedef.setMinutes(dakika);
+            hedef.setSeconds(0);
+
+              setInterval(() => {
+                  let simdi = new Date();
+                      let fark = hedef - simdi;
+
+                          if (fark < 0) {
+                                document.getElementById("sayac").innerHTML =
+                                      "⏳ Yeni vakit hesaplanıyor...";
+                                            return;
+                                                }
+
+                                                    let saat = Math.floor(fark / 3600000);
+                                                        let dakika = Math.floor((fark % 3600000) / 60000);
+                                                            let saniye = Math.floor((fark % 60000) / 1000);
+
+                                                                document.getElementById("sayac").innerHTML =
+                                                                    "⏳ Sonraki vakte " +
+                                                                        saat + " saat " +
+                                                                            dakika + " dakika " +
+                                                                                saniye + " saniye kaldı";
+                                                                                  },1000);
+                                                                                  }
+}
 
 </div>
 
@@ -124,7 +154,7 @@ document.getElementById("ogle").innerHTML=v.Dhuhr;
 document.getElementById("ikindi").innerHTML=v.Asr;
 document.getElementById("aksam").innerHTML=v.Maghrib;
 document.getElementById("yatsi").innerHTML=v.Isha;
-
+geriSayim(v.Isha);
 
 document.getElementById("sehir").innerHTML=
 veri.data.meta.timezone.split("/")[1]
