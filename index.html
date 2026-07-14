@@ -73,36 +73,50 @@ Sonraki vakit hesaplanıyor...
 
 
 <script>
-function geriSayim(saat) {
-    let hedef = new Date();
-      let [saatDeger, dakika] = saat.split(":");
+function geriSayim(saatler) {
 
-        hedef.setHours(saatDeger);
-          hedef.setMinutes(dakika);
-            hedef.setSeconds(0);
+    let simdi = new Date();
+    let hedef = null;
 
-              setInterval(() => {
-                  let simdi = new Date();
-                      let fark = hedef - simdi;
+    for(let i=0;i<saatler.length;i++){
 
-                          if (fark < 0) {
-                                document.getElementById("sayac").innerHTML =
-                                      "⏳ Yeni vakit hesaplanıyor...";
-                                            return;
-                                                }
+    let parca = saatler[i].split(":");
 
-                                                    let saat = Math.floor(fark / 3600000);
-                                                        let dakika = Math.floor((fark % 3600000) / 60000);
-                                                            let saniye = Math.floor((fark % 60000) / 1000);
+    let tarih = new Date();
+    tarih.setHours(parca[0]);
+    tarih.setMinutes(parca[1]);
+    tarih.setSeconds(0);
 
-                                                                document.getElementById("sayac").innerHTML =
-                                                                    "⏳ Sonraki vakte " +
-                                                                        saat + " saat " +
-                                                                            dakika + " dakika " +
-                                                                                saniye + " saniye kaldı";
-                                                                                  },1000);
-                                                                                  }
+    if(tarih > simdi){
+    hedef = tarih;
+    break;
+    }
 
+    }
+
+    if(!hedef){
+    hedef = new Date();
+    hedef.setDate(hedef.getDate()+1);
+    hedef.setHours(saatler[0].split(":")[0]);
+    hedef.setMinutes(saatler[0].split(":")[1]);
+    }
+
+    setInterval(()=>{
+
+    let simdi = new Date();
+    let fark = hedef - simdi;
+
+    let saat = Math.floor(fark/(1000*60*60));
+    let dakika = Math.floor((fark%(1000*60*60))/(1000*60));
+    let saniye = Math.floor((fark%(1000*60))/1000);
+
+    document.getElementById("sayac").innerHTML =
+    "⌛ Sonraki vakte " + saat + " saat " + dakika + " dakika " + saniye + " saniye kaldı";
+
+    },1000);
+
+    }
+}
 function bildirim(){
 
 alert("Bildirim özelliği yakında aktif olacak 🕌");
