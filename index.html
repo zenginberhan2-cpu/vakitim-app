@@ -120,18 +120,29 @@ body:"Namaz vakitleri için bildirimler açıldı 🕌"
 function konumAl(){
 
 navigator.geolocation.getCurrentPosition(
-vakitleriGetir,
-hata
+
+function(position){
+
+const lat = position.coords.latitude;
+const lon = position.coords.longitude;
+
+vakitleriGetir(lat, lon);
+
+},
+
+function(error){
+
+document.getElementById("durum").innerText =
+"📍 Konum alınamadı";
+
+alert("Konum izni verin ve tekrar deneyin.");
+
+}
+
 );
 
 }
 
-navigator.geolocation.getCurrentPosition(
-vakitleriGetir,
-hata
-);
-
-}
 
 async function vakitleriGetir(lat, lon){
 
