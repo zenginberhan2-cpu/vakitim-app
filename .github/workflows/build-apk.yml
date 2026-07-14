@@ -2,9 +2,6 @@ name: Vakitim APK
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   build:
@@ -33,6 +30,10 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npx cap init Vakitim com.vakitim.app --web-dir=www
           npx cap add android
+
+      - name: Kotlin duzelt
+        run: |
+          echo "kotlin.code.style=official" >> android/gradle.properties
 
       - name: APK olustur
         run: |
