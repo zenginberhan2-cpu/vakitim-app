@@ -86,6 +86,9 @@ padding:10px;
 <button id="bildirimButon" onclick="bildirimIzniIste()">
   🔔 Bildirimleri Aç
 </button>
+<p style="text-align:center;">
+🔔 Vakit geldiğinde uyarı alacaksınız
+</p>
 <div id="sayac" style="text-align:center; margin-top:25px; font-size:22px; font-weight:bold;">
   Sonraki vakit hesaplanıyor...
 </div>
@@ -93,21 +96,35 @@ padding:10px;
 
 <script>
 async function bildirimIzniIste() {
-  if (!("Notification" in window)) {
-    alert("Bu cihaz bildirimleri desteklemiyor.");
-    return;
-  }
 
-  const izin = await Notification.requestPermission();
-
-  if (izin === "granted") {
-    document.getElementById("bildirimButon").innerText =
-      "🔔 Bildirimler Açık";
-  } else {
-    alert("Bildirim izni verilmedi.");
-  }
+if (!("Notification" in window)){
+alert("Bu cihaz bildirimleri desteklemiyor.");
+return;
 }
+
+const izin = await Notification.requestPermission();
+
+if(izin==="granted"){
+
+document.getElementById("bildirimButon").innerText =
+"🔔 Bildirimler Açık";
+
+new Notification("Vakitim",{
+body:"Namaz vakitleri için bildirimler açıldı 🕌"
+});
+
+}
+
+}
+
 function konumAl(){
+
+navigator.geolocation.getCurrentPosition(
+vakitleriGetir,
+hata
+);
+
+}
 
 navigator.geolocation.getCurrentPosition(
 vakitleriGetir,
@@ -197,7 +214,7 @@ sehirAdi + " Namaz Vakitleri";
 
 }
 
-vakitleriGetir(41.0082, 28.9784);
+konumAl();
 
 </script>
 
