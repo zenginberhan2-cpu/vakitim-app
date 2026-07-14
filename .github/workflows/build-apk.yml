@@ -20,30 +20,16 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
+          java-version: 17
 
-      - name: Android uygulamasini hazirla
+      - name: Android projesini hazirla
         run: |
           mkdir -p www
           cp index.html www/index.html
           npm init -y
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+          npm install @capacitor/core@latest-6 @capacitor/cli@latest-6 @capacitor/android@latest-6
           npx cap init Vakitim com.vakitim.app --web-dir=www
           npx cap add android
-
-                 - name: Kotlin duzelt
-        run: |
-          cat >> android/app/build.gradle <<'EOF'
-          configurations.all {
-              resolutionStrategy {
-                  force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
-                  force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
-                  force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
-              }
-          }
-          EOF
-        run: |
-          echo "kotlin.code.style=official" >> android/gradle.properties
 
       - name: APK olustur
         run: |
