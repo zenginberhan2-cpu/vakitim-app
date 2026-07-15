@@ -157,186 +157,82 @@
 
   </main>
 
-  <script>
-    let sayacZamanlayici = null;
+<script>
+function geriSayim(saatler) {
 
-    function saatTemizle(saat) {
-      return String(saat).split(" ")[0];
+    let simdi = new Date();
+    let hedef = null;
+
+    for(let i=0;i<saatler.length;i++){
+
+    let parca = saatler[i].split(":");
+
+    let tarih = new Date();
+    tarih.setHours(parca[0]);
+    tarih.setMinutes(parca[1]);
+    tarih.setSeconds(0);
+
+    if(tarih > simdi){
+    hedef = tarih;
+    break;
     }
 
-    async function bildirimIzniIste() {
-      const buton =
-        document.getElementById("bildirimButon");
-
-      if (!("Notification" in window)) {
-        alert(
-          "Bu tarayıcı bildirim iznini desteklemiyor."
-        );
-        return;
-      }
-
-      try {
-        const izin =
-          await Notification.requestPermission();
-
-        if (izin === "granted") {
-          buton.innerText =
-            "🔔 Bildirimler Açık";
-
-          alert(
-            "Bildirim izni başarıyla verildi."
-          );
-        } else {
-          alert(
-            "Bildirim izni verilmedi."
-          );
-        }
-      } catch (hata) {
-        alert(
-          "Bildirim izni alınamadı."
-        );
-      }
     }
 
-    function konumAl() {
-      if (!navigator.geolocation) {
-        istanbulVakitleriniGetir();
-        return;
-      }
-
-      navigator.geolocation.getCurrentPosition(
-        function (konum) {
-          const lat =
-            konum.coords.latitude;
-
-          const lon =
-            konum.coords.longitude;
-
-          vakitleriGetir(lat, lon);
-        },
-
-        function () {
-          document.getElementById(
-            "durum"
-          ).innerText =
-            "📍 Konum alınamadı, İstanbul gösteriliyor";
-
-          istanbulVakitleriniGetir();
-        },
-
-        {
-          enableHighAccuracy: true,
-          timeout: 15000,
-          maximumAge: 60000
-        }
-      );
+    if(!hedef){
+    hedef = new Date();
+    hedef.setDate(hedef.getDate()+1);
+    hedef.setHours(saatler[0].split(":")[0]);
+    hedef.setMinutes(saatler[0].split(":")[1]);
     }
 
-    function istanbulVakitleriniGetir() {
-      vakitleriGetir(
-        41.0082,
-        28.9784
-      );
+    setInterval(()=>{
+
+    let simdi = new Date();
+    let fark = hedef - simdi;
+
+    let saat = Math.floor(fark/(1000*60*60));
+    let dakika = Math.floor((fark%(1000*60*60))/(1000*60));
+    let saniye = Math.floor((fark%(1000*60))/1000);
+
+    document.getElementById("sayac").innerHTML =
+    "⌛ Sonraki vakte " + saat + " saat " + dakika + " dakika " + saniye + " saniye kaldı";
+
+    },1000);
+
     }
+}
+function bildirim(){
 
-    async function vakitleriGetir(lat, lon) {
-      const durum =
-        document.getElementById("durum");
+alert("Bildirim özelliği yakında aktif olacak 🕌");
 
-      try {
-        const adres =
-          "https://api.aladhan.com/v1/timings" +
-          "?latitude=" + encodeURIComponent(lat) +
-          "&longitude=" + encodeURIComponent(lon) +
-          "&method=13";
+}
 
-        const cevap =
-          await fetch(adres);
 
-        if (!cevap.ok) {
-          throw new Error(
-            "Vakit bilgileri alınamadı"
-          );
-        }
+navigator.geolocation.getCurrentPosition(
+function(pos){
 
-        const veri =
-          await cevap.json();
+let lat=pos.coords.latitude;
+let lon=pos.coords.longitude;
 
-        if (
-          !veri.data ||
-          !veri.data.timings
-        ) {
-          throw new Error(
-            "Geçersiz vakit verisi"
-          );
-        }
+vakitGetir(lat,lon);
 
-        const vakit =
-          veri.data.timings;
+},
+function(){
 
-        const imsak =
-          saatTemizle(vakit.Fajr);
+document.getElementById("durum").innerHTML=
+"📍 Konum alınamadı";
 
-        const gunes =
-          saatTemizle(vakit.Sunrise);
+vakitGetir(41.0082,28.9784);
 
-        const ogle =
-          saatTemizle(vakit.Dhuhr);
+}
+);
 
-        const ikindi =
-          saatTemizle(vakit.Asr);
 
-        const aksam =
-          saatTemizle(vakit.Maghrib);
+async function vakitGetir(lat,lon){
 
-        const yatsi =
-          saatTemizle(vakit.Isha);
-
-        document.getElementById(
-          "imsak"
-        ).innerText = imsak;
-
-        document.getElementById(
-          "gunes"
-        ).innerText = gunes;
-
-        document.getElementById(
-          "ogle"
-        ).innerText = ogle;
-
-        document.getElementById(
-          "ikindi"
-        ).innerText = ikindi;
-
-        document.getElementById(
-          "aksam"
-        ).innerText = aksam;
-
-        document.getElementById(
-          "yatsi"
-        ).innerText = yatsi;
-
-        const zamanDilimi =
-          veri.data.meta &&
-          veri.data.meta.timezone
-            ? veri.data.meta.timezone
-            : "Konum";
-
-        const bolumler =
-          zamanDilimi.split("/");
-
-        const sehirAdi =
-          bolumler[bolumler.length - 1]
-            .replaceAll("_", " ");
-
-        document.getElementById(
-          "sehir"
-        ).innerText =
-          sehirAdi +
-          " Namaz Vakitleri";
-
-        durum.innerText =
-          "📍 Konum bulundu";
+document.getElementById("durum").innerHTML=
+"📍 Konum bulundu";
 
         geriSayimiBaslat([
           {
