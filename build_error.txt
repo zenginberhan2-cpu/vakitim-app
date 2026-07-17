@@ -1,0 +1,656 @@
+[ +222 ms] executing: uname -m
+[  +13 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[  +16 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[ +332 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[  +12 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +5 ms] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[   +5 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[ +150 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[  +19 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[  +30 ms] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[  +10 ms] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +544 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[  +21 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[   +5 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[ +600 ms] executing: [/workspaces/vakitim-app/] /home/codespace/flutter/bin/cache/dart-sdk/bin/dart pub --suppress-analytics --directory . get --example
+Resolving dependencies...
+Downloading packages...
+  matcher 0.12.19 (0.12.20 available)
+  meta 1.18.0 (1.19.0 available)
+  test_api 0.7.11 (0.7.13 available)
+  vector_math 2.2.0 (2.4.0 available)
+  xml 6.6.1 (7.0.1 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+[+2988 ms] Found plugin geolocator at /home/codespace/.pub-cache/hosted/pub.dev/geolocator-14.0.3/
+[  +14 ms] Found plugin geolocator_windows at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +36 ms] Found plugin geolocator_web at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_web-4.1.4/
+[  +29 ms] Found plugin geolocator_linux at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_linux-0.2.6/
+[  +44 ms] Found plugin package_info_plus at /home/codespace/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1/
+[ +228 ms] Found plugin geolocator_apple at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.14/
+[  +14 ms] Found plugin geolocator_android at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_android-5.0.3/
+[  +41 ms] Found plugin flutter_timezone at /home/codespace/.pub-cache/hosted/pub.dev/flutter_timezone-5.1.0/
+[  +20 ms] Found plugin flutter_local_notifications at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications-22.0.1/
+[  +26 ms] Found plugin flutter_local_notifications_windows at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_windows-3.1.1/
+[  +19 ms] Found plugin flutter_local_notifications_web at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_web-1.0.0/
+[  +22 ms] Found plugin flutter_local_notifications_linux at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-8.0.1/
+[ +439 ms] Found plugin geolocator at /home/codespace/.pub-cache/hosted/pub.dev/geolocator-14.0.3/
+[  +28 ms] Found plugin geolocator_windows at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[  +25 ms] Found plugin geolocator_web at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_web-4.1.4/
+[  +15 ms] Found plugin geolocator_linux at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_linux-0.2.6/
+[  +19 ms] Found plugin package_info_plus at /home/codespace/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1/
+[  +69 ms] Found plugin geolocator_apple at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.14/
+[   +7 ms] Found plugin geolocator_android at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_android-5.0.3/
+[  +11 ms] Found plugin flutter_timezone at /home/codespace/.pub-cache/hosted/pub.dev/flutter_timezone-5.1.0/
+[  +12 ms] Found plugin flutter_local_notifications at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications-22.0.1/
+[  +12 ms] Found plugin flutter_local_notifications_windows at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_windows-3.1.1/
+[  +10 ms] Found plugin flutter_local_notifications_web at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_web-1.0.0/
+[   +4 ms] Found plugin flutter_local_notifications_linux at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-8.0.1/
+[  +94 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[ +151 ms] Found plugin geolocator at /home/codespace/.pub-cache/hosted/pub.dev/geolocator-14.0.3/
+[   +2 ms] Found plugin geolocator_windows at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+[   +5 ms] Found plugin geolocator_web at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_web-4.1.4/
+[   +4 ms] Found plugin geolocator_linux at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_linux-0.2.6/
+[   +4 ms] Found plugin package_info_plus at /home/codespace/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1/
+[  +20 ms] Found plugin geolocator_apple at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.14/
+[   +3 ms] Found plugin geolocator_android at /home/codespace/.pub-cache/hosted/pub.dev/geolocator_android-5.0.3/
+[  +30 ms] Found plugin flutter_timezone at /home/codespace/.pub-cache/hosted/pub.dev/flutter_timezone-5.1.0/
+[  +32 ms] Found plugin flutter_local_notifications at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications-22.0.1/
+[  +10 ms] Found plugin flutter_local_notifications_windows at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_windows-3.1.1/
+[  +17 ms] Found plugin flutter_local_notifications_web at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_web-1.0.0/
+[   +4 ms] Found plugin flutter_local_notifications_linux at /home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-8.0.1/
+[ +287 ms] Generating /workspaces/vakitim-app/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+[  +37 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[  +51 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +6 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +8 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[  +14 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +7 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[  +10 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[  +30 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[  +18 ms] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[  +11 ms] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[ +215 ms] Top-level Gradle build file not found, skipping migration of task "clean".
+[   +2 ms] Android Studio version could not be detected, skipping Gradle-Java version compatibility check.
+[   +3 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +2 ms] The developer has already configured the Built-In Kotlin flag, skipping migration.
+[   +1 ms] The developer has already configured the new DSL flag, skipping migration.
+[  +11 ms] Using gradle from /workspaces/vakitim-app/android/gradlew.
+[  +28 ms] LocalFile: '/workspaces/vakitim-app/android/build.gradle.kts' doesn't provide an AGP version. Checking settings.
+[   +2 ms] LocalFile: '/workspaces/vakitim-app/android/settings.gradle.kts' provides AGP version: 9.0.1
+[   +2 ms] Running Gradle task 'assembleRelease'...
+[   +2 ms] executing: [/workspaces/vakitim-app/android/] /workspaces/vakitim-app/android/gradlew --full-stacktrace --info -Pverbose=true -Ptarget-platform=android-arm,android-arm64,android-x64 -Ptarget=lib/main.dart -Pbase-application-name=android.app.Application -Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuNDQuNg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049ZWU4MGYwOGJiZg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049ODM2NzVlZDI3Ng==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMi4y -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=true assembleRelease
+[+2698 ms] WARNING: A restricted method in java.lang.System has been called
+[   +8 ms] WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/codespace/.gradle/wrapper/dists/gradle-9.1.0-all/7wzd0jkjit61aq2p43wpjgij9/gradle-9.1.0/lib/native-platform-0.22-milestone-28.jar)
+[        ] WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+[        ] WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+[   +1 ms] Initialized native services in: /home/codespace/.gradle/native
+[   +6 ms] Initialized jansi services in: /home/codespace/.gradle/native
+[ +717 ms] To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+[ +110 ms] Starting process 'Gradle build daemon'. Working directory: /home/codespace/.gradle/daemon/9.1.0 Command: /usr/local/sdkman/candidates/java/25.0.2-ms/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --enable-native-access=ALL-UNNAMED -XX:MaxMetaspaceSize=512M -Xmx2048M -Dfile.encoding=UTF-8 -Duser.country -Duser.language=en -Duser.variant -cp /home/codespace/.gradle/wrapper/dists/gradle-9.1.0-all/7wzd0jkjit61aq2p43wpjgij9/gradle-9.1.0/lib/gradle-daemon-main-9.1.0.jar -javaagent:/home/codespace/.gradle/wrapper/dists/gradle-9.1.0-all/7wzd0jkjit61aq2p43wpjgij9/gradle-9.1.0/lib/agents/gradle-instrumentation-agent-9.1.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.1.0
+[  +89 ms] Successfully started process 'Gradle build daemon'
+[+3097 ms] An attempt to start the daemon took 3.223 secs.
+[ +207 ms] The client will now receive all logging from the daemon (pid: 209735). The daemon log file: /home/codespace/.gradle/daemon/9.1.0/daemon-209735.out.log
+[   +5 ms] Daemon will be stopped at the end of the build 
+[+1187 ms] Using 2 worker leases.
+[+1001 ms] Received JVM installation metadata from '/usr/local/sdkman/candidates/java/25.0.2-ms': {JAVA_HOME=/usr/local/sdkman/candidates/java/25.0.2-ms, JAVA_VERSION=25.0.2, JAVA_VENDOR=Microsoft, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=25.0.2+10-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=25.0.2+10-LTS, VM_VENDOR=Microsoft, OS_ARCH=amd64}
+[ +704 ms] Watching the file system is configured to be enabled if available
+[   +5 ms] Not watching /workspaces/vakitim-app/android since the file system is not supported
+[  +90 ms] File system watching is active
+[+2503 ms] Starting Build
+[+1100 ms] Not watching /home/codespace/flutter/packages/flutter_tools/gradle since the file system is not supported
+[+2404 ms] > Configure project :gradle
+[   +4 ms] Evaluating project ':gradle' using build file '/home/codespace/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+[   +2 ms] Resolved plugin [id: 'org.gradle.java-gradle-plugin']
+[   +1 ms] Resolved plugin [id: 'org.gradle.groovy']
+[        ] Resolved plugin [id: 'org.gradle.kotlin.kotlin-dsl', version: '6.2.0']
+[        ] Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.20']
+[+2981 ms] Build bb3f6922-56d5-4280-aab7-1a5848c772ac is started
+[ +301 ms] Using Kotlin Gradle Plugin gradle813 variant
+[ +799 ms] kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+[   +6 ms] kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+[ +293 ms] WARNING: Unsupported Kotlin plugin version.
+[   +1 ms] The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.0` that might work differently than in the requested version `2.2.20`.
+[  +98 ms] file or directory '/home/codespace/flutter/packages/flutter_tools/gradle/src/main/java', not found
+[+1298 ms] Resolved plugin [id: 'dev.flutter.flutter-plugin-loader', version: '1.0.0']
+[   +2 ms] Resolved plugin [id: 'com.android.application', version: '9.0.1', apply: false]
+[ +101 ms] Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.3.20', apply: false]
+[ +600 ms] Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#52,included builds,5,main]) started.
+[   +9 ms] :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#53,Execution worker,5,main]) started.
+[ +200 ms] > Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[   +7 ms] Skipping task ':gradle:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+[   +1 ms] Resolve mutations for :gradle:compileKotlin (Thread[#53,Execution worker,5,main]) started.
+[  +78 ms] :gradle:compileKotlin (Thread[#53,Execution worker,5,main]) started.
+[ +802 ms] > Task :gradle:compileKotlin UP-TO-DATE
+[        ] Caching disabled for task ':gradle:compileKotlin' because:
+[   +1 ms]   Build cache is disabled
+[        ] Skipping task ':gradle:compileKotlin' as it is up-to-date.
+[   +1 ms] Resolve mutations for :gradle:compileJava (Thread[#53,Execution worker,5,main]) started.
+[        ] :gradle:compileJava (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :gradle:compileJava NO-SOURCE
+[        ] Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:compileGroovy (Thread[#53,Execution worker,5,main]) started.
+[        ] :gradle:compileGroovy (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :gradle:compileGroovy NO-SOURCE
+[        ] Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+[        ] Resolve mutations for :gradle:pluginDescriptors (Thread[#53,Execution worker,5,main]) started.
+[        ] :gradle:pluginDescriptors (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :gradle:pluginDescriptors UP-TO-DATE
+[        ] Caching disabled for task ':gradle:pluginDescriptors' because:
+[        ]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+[        ] Resolve mutations for :gradle:processResources (Thread[#53,Execution worker,5,main]) started.
+[        ] :gradle:processResources (Thread[#53,Execution worker,5,main]) started.
+[  +91 ms] > Task :gradle:processResources UP-TO-DATE
+[        ] Caching disabled for task ':gradle:processResources' because:
+[   +1 ms]   Build cache is disabled
+[   +2 ms]   Not worth caching
+[   +2 ms] Skipping task ':gradle:processResources' as it is up-to-date.
+[   +2 ms] Resolve mutations for :gradle:classes (Thread[#53,Execution worker,5,main]) started.
+[   +1 ms] :gradle:classes (Thread[#53,Execution worker,5,main]) started.
+[   +4 ms] > Task :gradle:classes UP-TO-DATE
+[        ] Skipping task ':gradle:classes' as it has no actions.
+[        ] Resolve mutations for :gradle:jar (Thread[#53,Execution worker,5,main]) started.
+[        ] :gradle:jar (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :gradle:jar UP-TO-DATE
+[        ] Caching disabled for task ':gradle:jar' because:
+[   +3 ms]   Build cache is disabled
+[        ]   Not worth caching
+[        ] Skipping task ':gradle:jar' as it is up-to-date.
+[+2779 ms] Settings evaluated using settings file '/workspaces/vakitim-app/android/settings.gradle.kts'.
+[ +105 ms] Projects loaded. Root project using build file '/workspaces/vakitim-app/android/build.gradle.kts'.
+[        ] Included projects: [root project 'android', project ':app', project ':flutter_local_notifications', project ':flutter_timezone', project ':geolocator_android', project ':package_info_plus']
+[+1994 ms] > Configure project :
+[   +4 ms] Evaluating root project 'android' using build file '/workspaces/vakitim-app/android/build.gradle.kts'.
+[+8993 ms] > Configure project :app
+[   +8 ms] Evaluating project ':app' using build file '/workspaces/vakitim-app/android/app/build.gradle.kts'.
+[   +4 ms] Resolved plugin [id: 'com.android.application']
+[   +2 ms] Resolved plugin [id: 'dev.flutter.flutter-gradle-plugin']
+[   +2 ms] WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+[        ] The current default is 'true'.
+[        ] It will be removed in version 10.0 of the Android Gradle plugin.
+[        ] WARNING: The option setting 'android.newDsl=false' is deprecated.
+[        ] The current default is 'true'.
+[        ] It will be removed in version 10.0 of the Android Gradle plugin.
+[        ] Using default execution profile
+[        ] Build e0b93beb-a4f4-49af-a3a6-dd642ecf1ec6 is started
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] Using Kotlin Gradle Plugin gradle813 variant
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +3 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[  +14 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[  +12 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +3 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +1 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +3 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +1 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[  +36 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +1 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +2 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +9 ms] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +2 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +2 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[   +2 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +3 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +2 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[   +5 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +2 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +4 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +2 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +2 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +1 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +2 ms] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[        ] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[        ] C/C++: android.ndkPath from module build.gradle is not set
+[        ] C/C++: ndk.dir in local.properties is not set
+[        ] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[        ] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +4 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +2 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +1 ms] C/C++: ndk.dir in local.properties is not set
+[   +1 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +1 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[   +1 ms] C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+[   +1 ms] C/C++: android.ndkPath from module build.gradle is not set
+[   +1 ms] C/C++: ndk.dir in local.properties is not set
+[   +2 ms] C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+[   +1 ms] C/C++: sdkFolder is /home/codespace/android-sdk
+[  +62 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[   +7 ms] The 'org.jetbrains.kotlin.android' plugin in project ':app' is no longer required for Kotlin support since AGP 9.0.
+[   +2 ms] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[        ] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[+1747 ms] > Configure project :flutter_local_notifications
+[   +3 ms] Evaluating project ':flutter_local_notifications' using build file '/home/codespace/.pub-cache/hosted/pub.dev/flutter_local_notifications-22.0.1/android/build.gradle'.
+[ +989 ms] Using default execution profile
+[+1596 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[        ] The 'org.jetbrains.kotlin.android' plugin in project ':flutter_local_notifications' is no longer required for Kotlin support since AGP 9.0.
+[   +3 ms] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[        ] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[+1998 ms] > Configure project :flutter_timezone
+[   +2 ms] Evaluating project ':flutter_timezone' using build file '/home/codespace/.pub-cache/hosted/pub.dev/flutter_timezone-5.1.0/android/build.gradle'.
+[+2396 ms] Using default execution profile
+[   +1 ms] Using Kotlin Gradle Plugin gradle813 variant
+[ +596 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[   +4 ms] The 'org.jetbrains.kotlin.android' plugin in project ':flutter_timezone' is no longer required for Kotlin support since AGP 9.0.
+[   +1 ms] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[   +2 ms] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[+1596 ms] > Configure project :geolocator_android
+[   +1 ms] Evaluating project ':geolocator_android' using build file '/home/codespace/.pub-cache/hosted/pub.dev/geolocator_android-5.0.3/android/build.gradle'.
+[   +3 ms] Using default execution profile
+[        ] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[        ] The 'org.jetbrains.kotlin.android' plugin in project ':geolocator_android' is no longer required for Kotlin support since AGP 9.0.
+[   +1 ms] [32m[1mSolution:[0m[0m
+[        ] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[        ] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[+1988 ms] > Configure project :package_info_plus
+[        ] Evaluating project ':package_info_plus' using build file '/home/codespace/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1/android/build.gradle.kts'.
+[   +4 ms] Resolved plugin [id: 'com.android.library']
+[        ] Using default execution profile
+[ +890 ms] w: [33m[1m⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage[0m[0m
+[   +3 ms] The 'org.jetbrains.kotlin.android' plugin in project ':package_info_plus' is no longer required for Kotlin support since AGP 9.0.
+[   +4 ms] [32m[1mSolution:[0m[0m
+[   +1 ms] [32m[3mRemove both `android.builtInKotlin=true` and `android.newDsl=false` from `gradle.properties`, then migrate to built-in Kotlin.[0m[0m
+[   +1 ms] [36mSee [0m[34mhttps://kotl.in/gradle/agp-built-in-kotlin[0m[36m for more details.[0m
+[   +1 ms] All projects evaluated.
+[   +1 ms] WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): flutter_timezone
+[        ] Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+[   +2 ms] Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
+[        ] If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing 
+[        ] an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+[        ] If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+[  +91 ms] Task name matched 'assembleRelease'
+[  +35 ms] Selected primary task 'assembleRelease' from project :
+[+4554 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+[   +2 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+[   +1 ms] Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileProfileKotlin
+[+2802 ms] Tasks to be executed: [task ':app:ReleaseMinSdkCheck', task ':app:preBuild', task ':app:preReleaseBuild', task ':app:configureCMakeRelease[arm64-v8a]', task ':app:buildCMakeRelease[arm64-v8a]', task ':app:configureCMakeRelease[armeabi-v7a]', task ':app:buildCMakeRelease[armeabi-v7a]', task ':app:configureCMakeRelease[x86_64]', task ':app:buildCMakeRelease[x86_64]', task ':app:compileFlutterBuildRelease', task ':app:copyJniLibsflutterBuildRelease', task ':app:mergeReleaseJniLibFolders', task ':flutter_local_notifications:preBuild', task ':flutter_local_notifications:preReleaseBuild', task ':flutter_local_notifications:mergeReleaseJniLibFolders', task ':flutter_local_notifications:mergeReleaseNativeLibs', task ':flutter_local_notifications:copyReleaseJniLibsProjectOnly', task ':flutter_timezone:preBuild', task ':flutter_timezone:preReleaseBuild', task ':flutter_timezone:mergeReleaseJniLibFolders', task ':flutter_timezone:mergeReleaseNativeLibs', task ':flutter_timezone:copyReleaseJniLibsProjectOnly', task ':geolocator_android:preBuild', task ':geolocator_android:preReleaseBuild', task ':geolocator_android:mergeReleaseJniLibFolders', task ':geolocator_android:mergeReleaseNativeLibs', task ':geolocator_android:copyReleaseJniLibsProjectOnly', task ':package_info_plus:preBuild', task ':package_info_plus:preReleaseBuild', task ':package_info_plus:mergeReleaseJniLibFolders', task ':package_info_plus:mergeReleaseNativeLibs', task ':package_info_plus:copyReleaseJniLibsProjectOnly', task ':app:mergeReleaseNativeLibs', task ':app:stripReleaseDebugSymbols', task ':app:extractReleaseNativeSymbolTables', task ':app:mergeReleaseNativeDebugMetadata', task ':flutter_local_notifications:prepareReleaseArtProfile', task ':flutter_timezone:prepareReleaseArtProfile', task ':geolocator_android:prepareReleaseArtProfile', task ':package_info_plus:prepareReleaseArtProfile', task ':app:mergeReleaseArtProfile', task ':app:expandReleaseL8ArtProfileWildcards', task ':flutter_local_notifications:checkKotlinGradlePluginConfigurationErrors', task ':flutter_local_notifications:generateReleaseResources', task ':flutter_local_notifications:packageReleaseResources', task ':flutter_local_notifications:processReleaseNavigationResources', task ':flutter_local_notifications:parseReleaseLocalResources', task ':flutter_local_notifications:generateReleaseRFile', task ':flutter_local_notifications:compileReleaseKotlin', task ':flutter_local_notifications:javaPreCompileRelease', task ':flutter_local_notifications:compileReleaseJavaWithJavac', task ':flutter_local_notifications:mergeReleaseGeneratedProguardFiles', task ':flutter_local_notifications:exportReleaseConsumerProguardFiles', task ':flutter_timezone:checkKotlinGradlePluginConfigurationErrors', task ':flutter_timezone:generateReleaseResources', task ':flutter_timezone:packageReleaseResources', task ':flutter_timezone:processReleaseNavigationResources', task ':flutter_timezone:parseReleaseLocalResources', task ':flutter_timezone:generateReleaseRFile', task ':flutter_timezone:compileReleaseKotlin', task ':flutter_timezone:javaPreCompileRelease', task ':flutter_timezone:compileReleaseJavaWithJavac', task ':flutter_timezone:mergeReleaseGeneratedProguardFiles', task ':flutter_timezone:exportReleaseConsumerProguardFiles', task ':geolocator_android:checkKotlinGradlePluginConfigurationErrors', task ':geolocator_android:generateReleaseResources', task ':geolocator_android:packageReleaseResources', task ':geolocator_android:processReleaseNavigationResources', task ':geolocator_android:parseReleaseLocalResources', task ':geolocator_android:generateReleaseRFile', task ':geolocator_android:compileReleaseKotlin', task ':geolocator_android:javaPreCompileRelease', task ':geolocator_android:compileReleaseJavaWithJavac', task ':geolocator_android:mergeReleaseGeneratedProguardFiles', task ':geolocator_android:exportReleaseConsumerProguardFiles', task ':package_info_plus:checkKotlinGradlePluginConfigurationErrors', task ':package_info_plus:generateReleaseResources', task ':package_info_plus:packageReleaseResources', task ':package_info_plus:processReleaseNavigationResources', task ':package_info_plus:parseReleaseLocalResources', task ':package_info_plus:generateReleaseRFile', task ':package_info_plus:compileReleaseKotlin', task ':package_info_plus:javaPreCompileRelease', task ':package_info_plus:compileReleaseJavaWithJavac', task ':package_info_plus:mergeReleaseGeneratedProguardFiles', task ':package_info_plus:exportReleaseConsumerProguardFiles', task ':app:buildKotlinToolingMetadata', task ':app:checkReleaseDuplicateClasses', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:cleanMergeReleaseAssets', task ':app:generateReleaseAssets', task ':flutter_local_notifications:generateReleaseAssets', task ':flutter_local_notifications:mergeReleaseAssets', task ':flutter_timezone:generateReleaseAssets', task ':flutter_timezone:mergeReleaseAssets', task ':geolocator_android:generateReleaseAssets', task ':geolocator_android:mergeReleaseAssets', task ':package_info_plus:generateReleaseAssets', task ':package_info_plus:mergeReleaseAssets', task ':app:mergeReleaseAssets', task ':app:copyFlutterAssetsRelease', task ':app:generateReleaseResources', task ':app:packageReleaseResources', task ':app:processReleaseNavigationResources', task ':app:parseReleaseLocalResources', task ':app:generateReleaseRFile', task ':flutter_local_notifications:bundleLibCompileToJarRelease', task ':flutter_timezone:bundleLibCompileToJarRelease', task ':geolocator_android:bundleLibCompileToJarRelease', task ':package_info_plus:bundleLibCompileToJarRelease', task ':app:compileReleaseKotlin', task ':app:javaPreCompileRelease', task ':app:compileReleaseJavaWithJavac', task ':flutter_local_notifications:writeReleaseAarMetadata', task ':flutter_timezone:writeReleaseAarMetadata', task ':geolocator_android:writeReleaseAarMetadata', task ':package_info_plus:writeReleaseAarMetadata', task ':app:checkReleaseAarMetadata', task ':app:compileReleaseNavigationResources', task ':app:mapReleaseSourceSetPaths', task ':app:mergeReleaseResources', task ':app:createReleaseCompatibleScreenManifests', task ':app:extractDeepLinksRelease', task ':flutter_local_notifications:extractDeepLinksRelease', task ':flutter_local_notifications:processReleaseManifest', task ':flutter_timezone:extractDeepLinksRelease', task ':flutter_timezone:processReleaseManifest', task ':geolocator_android:extractDeepLinksRelease', task ':geolocator_android:processReleaseManifest', task ':package_info_plus:extractDeepLinksRelease', task ':package_info_plus:processReleaseManifest', task ':app:processReleaseMainManifest', task ':app:outputReleaseAppLinkSettings', task ':app:processReleaseManifest', task ':app:processReleaseManifestForPackage', task ':app:processReleaseResources', task ':flutter_local_notifications:bundleLibRuntimeToJarRelease', task ':flutter_timezone:bundleLibRuntimeToJarRelease', task ':geolocator_android:bundleLibRuntimeToJarRelease', task ':package_info_plus:bundleLibRuntimeToJarRelease', task ':app:expandReleaseArtProfileWildcards', task ':app:extractProguardFiles', task ':app:mergeReleaseGeneratedProguardFiles', task ':app:processReleaseJavaRes', task ':flutter_local_notifications:processReleaseJavaRes', task ':flutter_timezone:processReleaseJavaRes', task ':geolocator_android:processReleaseJavaRes', task ':package_info_plus:processReleaseJavaRes', task ':app:mergeReleaseJavaResource', task ':app:mergeReleaseStartupProfile', task ':app:minifyReleaseWithR8', task ':app:l8DexDesugarLibRelease', task ':app:compileReleaseArtProfile', task ':app:compressReleaseAssets', task ':app:extractReleaseVersionControlInfo', task ':flutter_local_notifications:createFullJarRelease', task ':flutter_local_notifications:extractProguardFiles', task ':flutter_local_notifications:generateReleaseLintModel', task ':flutter_local_notifications:prepareLintJarForPublish', task ':flutter_timezone:createFullJarRelease', task ':flutter_timezone:extractProguardFiles', task ':flutter_timezone:generateReleaseLintModel', task ':flutter_timezone:prepareLintJarForPublish', task ':geolocator_android:createFullJarRelease', task ':geolocator_android:extractProguardFiles', task ':geolocator_android:generateReleaseLintModel', task ':geolocator_android:prepareLintJarForPublish', task ':package_info_plus:createFullJarRelease', task ':package_info_plus:extractProguardFiles', task ':package_info_plus:generateReleaseLintModel', task ':package_info_plus:prepareLintJarForPublish', task ':app:generateReleaseLintVitalReportModel', task ':flutter_local_notifications:checkReleaseAarMetadata', task ':flutter_local_notifications:stripReleaseDebugSymbols', task ':flutter_local_notifications:copyReleaseJniLibsProjectAndLocalJars', task ':flutter_local_notifications:extractDeepLinksForAarRelease', task ':flutter_local_notifications:extractReleaseAnnotations', task ':flutter_local_notifications:mergeReleaseConsumerProguardFiles', task ':flutter_local_notifications:mergeReleaseJavaResource', task ':flutter_local_notifications:syncReleaseLibJars', task ':flutter_local_notifications:bundleReleaseLocalLintAar', task ':flutter_timezone:checkReleaseAarMetadata', task ':flutter_timezone:stripReleaseDebugSymbols', task ':flutter_timezone:copyReleaseJniLibsProjectAndLocalJars', task ':flutter_timezone:extractDeepLinksForAarRelease', task ':flutter_timezone:extractReleaseAnnotations', task ':flutter_timezone:mergeReleaseConsumerProguardFiles', task ':flutter_timezone:mergeReleaseJavaResource', task ':flutter_timezone:syncReleaseLibJars', task ':flutter_timezone:bundleReleaseLocalLintAar', task ':geolocator_android:checkReleaseAarMetadata', task ':geolocator_android:stripReleaseDebugSymbols', task ':geolocator_android:copyReleaseJniLibsProjectAndLocalJars', task ':geolocator_android:extractDeepLinksForAarRelease', task ':geolocator_android:extractReleaseAnnotations', task ':geolocator_android:mergeReleaseConsumerProguardFiles', task ':geolocator_android:mergeReleaseJavaResource', task ':geolocator_android:syncReleaseLibJars', task ':geolocator_android:bundleReleaseLocalLintAar', task ':package_info_plus:checkReleaseAarMetadata', task ':package_info_plus:stripReleaseDebugSymbols', task ':package_info_plus:copyReleaseJniLibsProjectAndLocalJars', task ':package_info_plus:extractDeepLinksForAarRelease', task ':package_info_plus:extractReleaseAnnotations', task ':package_info_plus:mergeReleaseConsumerProguardFiles', task ':package_info_plus:mergeReleaseJavaResource', task ':package_info_plus:syncReleaseLibJars', task ':package_info_plus:bundleReleaseLocalLintAar', task ':flutter_local_notifications:lintVitalAnalyzeRelease', task ':flutter_local_notifications:writeReleaseLintModelMetadata', task ':flutter_timezone:lintVitalAnalyzeRelease', task ':flutter_timezone:writeReleaseLintModelMetadata', task ':geolocator_android:lintVitalAnalyzeRelease', task ':geolocator_android:writeReleaseLintModelMetadata', task ':package_info_plus:lintVitalAnalyzeRelease', task ':package_info_plus:writeReleaseLintModelMetadata', task ':app:lintVitalAnalyzeRelease', task ':flutter_local_notifications:generateReleaseLintVitalModel', task ':flutter_timezone:generateReleaseLintVitalModel', task ':geolocator_android:generateReleaseLintVitalModel', task ':package_info_plus:generateReleaseLintVitalModel', task ':app:lintVitalReportRelease', task ':app:lintVitalRelease', task ':app:convertShrunkResourcesToBinaryRelease', task ':app:optimizeReleaseResources', task ':app:collectReleaseDependencies', task ':app:sdkReleaseDependencyData', task ':app:validateSigningRelease', task ':app:writeReleaseAppMetadata', task ':app:writeReleaseSigningConfigVersions', task ':app:packageRelease', task ':app:createReleaseApkListingFileRedirect', task ':app:assembleRelease', task ':flutter_local_notifications:bundleReleaseAar', task ':flutter_local_notifications:compileReleaseNavigationResources', task ':flutter_local_notifications:mapReleaseSourceSetPaths', task ':flutter_local_notifications:mergeReleaseResources', task ':flutter_local_notifications:verifyReleaseResources', task ':flutter_local_notifications:assembleRelease', task ':flutter_timezone:bundleReleaseAar', task ':flutter_timezone:compileReleaseNavigationResources', task ':flutter_timezone:mapReleaseSourceSetPaths', task ':flutter_timezone:mergeReleaseResources', task ':flutter_timezone:verifyReleaseResources', task ':flutter_timezone:assembleRelease', task ':geolocator_android:bundleReleaseAar', task ':geolocator_android:compileReleaseNavigationResources', task ':geolocator_android:mapReleaseSourceSetPaths', task ':geolocator_android:mergeReleaseResources', task ':geolocator_android:verifyReleaseResources', task ':geolocator_android:assembleRelease', task ':package_info_plus:bundleReleaseAar', task ':package_info_plus:compileReleaseNavigationResources', task ':package_info_plus:mapReleaseSourceSetPaths', task ':package_info_plus:mergeReleaseResources', task ':package_info_plus:verifyReleaseResources', task ':package_info_plus:assembleRelease']
+[   +5 ms] Tasks that were excluded: []
+[   +1 ms] work action Parameters of FilterShrinkerRulesTransform (Thread[#53,Execution worker,5,main]) started.
+[  +91 ms] work action Parameters of ExtractAarTransform (Thread[#53,Execution worker,5,main]) started.
+[        ] Resolve mutations for :app:ReleaseMinSdkCheck (Thread[#52,included builds,5,main]) started.
+[  +10 ms] :app:ReleaseMinSdkCheck (Thread[#53,Execution worker,5,main]) started.
+[  +91 ms] > Task :app:ReleaseMinSdkCheck
+[   +1 ms] Caching disabled for task ':app:ReleaseMinSdkCheck' because:
+[        ]   Build cache is disabled
+[        ] Task ':app:ReleaseMinSdkCheck' is not up-to-date because:
+[        ]   Task has not declared any outputs despite executing actions.
+[        ] Resolve mutations for :app:preBuild (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:preBuild (Thread[#53,Execution worker,5,main]) started.
+[  +20 ms] > Task :app:preBuild UP-TO-DATE
+[   +1 ms] Skipping task ':app:preBuild' as it has no actions.
+[   +1 ms] Resolve mutations for :app:preReleaseBuild (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:preReleaseBuild (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :app:preReleaseBuild UP-TO-DATE
+[        ] Skipping task ':app:preReleaseBuild' as it has no actions.
+[        ] Resolve mutations for :app:configureCMakeRelease[arm64-v8a] (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:configureCMakeRelease[arm64-v8a] (Thread[#52,included builds,5,main]) started.
+[+1666 ms] > Task :app:configureCMakeRelease[arm64-v8a]
+[   +4 ms] Caching disabled for task ':app:configureCMakeRelease[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[arm64-v8a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: Parsing legacy package: /home/codespace/android-sdk/cmdline-tools/latest
+[        ] C/C++: SDK Manager found the following installed packages: build-tools;35.0.0 build-tools;36.0.0 cmake;3.22.1 ndk;28.2.13676358 platform-tools platforms;android-35 platforms;android-36
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|arm64-v8a : JSON '/workspaces/vakitim-app/build/.cxx/release/2j4s1k1e/arm64-v8a/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|arm64-v8a : JSON generation completed without problems
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|arm64-v8a : Writing build model to /workspaces/vakitim-app/build/app/intermediates/cxx/release/2j4s1k1e/logs/arm64-v8a/build_model.json
+[   +5 ms] Resolve mutations for :app:buildCMakeRelease[arm64-v8a] (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:buildCMakeRelease[arm64-v8a] (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :app:buildCMakeRelease[arm64-v8a]
+[   +1 ms] Caching disabled for task ':app:buildCMakeRelease[arm64-v8a]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[   +1 ms] Task ':app:buildCMakeRelease[arm64-v8a]' is not up-to-date because:
+[   +1 ms]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[   +3 ms] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeRelease[armeabi-v7a] (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:configureCMakeRelease[armeabi-v7a] (Thread[#53,Execution worker,5,main]) started.
+[   +1 ms] > Task :app:configureCMakeRelease[armeabi-v7a]
+[   +1 ms] Caching disabled for task ':app:configureCMakeRelease[armeabi-v7a]' because:
+[   +2 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|armeabi-v7a : JSON '/workspaces/vakitim-app/build/.cxx/release/2j4s1k1e/armeabi-v7a/android_gradle_build.json' was up-to-date
+[   +1 ms] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|armeabi-v7a : JSON generation completed without problems
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|armeabi-v7a : Writing build model to /workspaces/vakitim-app/build/app/intermediates/cxx/release/2j4s1k1e/logs/armeabi-v7a/build_model.json
+[        ] Resolve mutations for :app:buildCMakeRelease[armeabi-v7a] (Thread[#53,Execution worker,5,main]) started.
+[   +1 ms] :app:buildCMakeRelease[armeabi-v7a] (Thread[#53,Execution worker,5,main]) started.
+[  +61 ms] > Task :app:buildCMakeRelease[armeabi-v7a]
+[   +4 ms] Caching disabled for task ':app:buildCMakeRelease[armeabi-v7a]' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeRelease[armeabi-v7a]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[   +2 ms] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[        ] C/C++: executing build commands for targets that produce .so files or executables
+[        ] C/C++: evaluate miniconfig
+[        ] C/C++: no libraries
+[        ] Resolve mutations for :app:configureCMakeRelease[x86_64] (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:configureCMakeRelease[x86_64] (Thread[#53,Execution worker,5,main]) started.
+[        ] > Task :app:configureCMakeRelease[x86_64]
+[        ] Caching disabled for task ':app:configureCMakeRelease[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:configureCMakeRelease[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[   +2 ms] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|x86_64 : JSON '/workspaces/vakitim-app/build/.cxx/release/2j4s1k1e/x86_64/android_gradle_build.json' was up-to-date
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|x86_64 : JSON generation completed without problems
+[        ] C/C++: /home/codespace/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt release|x86_64 : Writing build model to /workspaces/vakitim-app/build/app/intermediates/cxx/release/2j4s1k1e/logs/x86_64/build_model.json
+[        ] Resolve mutations for :app:buildCMakeRelease[x86_64] (Thread[#53,Execution worker,5,main]) started.
+[        ] :app:buildCMakeRelease[x86_64] (Thread[#52,included builds,5,main]) started.
+[        ] > Task :app:buildCMakeRelease[x86_64]
+[        ] Caching disabled for task ':app:buildCMakeRelease[x86_64]' because:
+[        ]   Build cache is disabled
+[        ]   Caching has been disabled for the task
+[        ] Task ':app:buildCMakeRelease[x86_64]' is not up-to-date because:
+[        ]   Task.upToDateWhen is false.
+[        ] C/C++: starting build
+[        ] C/C++: reading expected JSONs
+[        ] C/C++: done reading expected JSONs
+[   +4 ms] C/C++: executing build commands for targets that produce .so files or executables
+[   +1 ms] C/C++: evaluate miniconfig
+[   +1 ms] C/C++: no libraries
+[        ] Resolve mutations for :app:compileFlutterBuildRelease (Thread[#53,Execution worker,5,main]) started.
+[  +75 ms] :app:compileFlutterBuildRelease (Thread[#53,Execution worker,5,main]) started.
+[+1999 ms] > Task :app:compileFlutterBuildRelease
+[   +2 ms] Caching disabled for task ':app:compileFlutterBuildRelease' because:
+[   +1 ms]   Build cache is disabled
+[        ]   Caching has not been enabled for the task
+[        ] Task ':app:compileFlutterBuildRelease' is not up-to-date because:
+[        ]   Input property 'sourceFiles' file /workspaces/vakitim-app/lib/main.dart has changed.
+[        ] Starting process 'command '/home/codespace/flutter/bin/flutter''. Working directory: /workspaces/vakitim-app Command: /home/codespace/flutter/bin/flutter --verbose assemble --no-version-check --depfile /workspaces/vakitim-app/build/app/intermediates/flutter/release/flutter_build.d --output /workspaces/vakitim-app/build/app/intermediates/flutter/release -dTargetFile=lib/main.dart -dTargetPlatform=android -dBuildMode=release -dTrackWidgetCreation=true -dTreeShakeIcons=true --DartDefines=RkxVVFRFUl9WRVJTSU9OPTMuNDQuNg==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049ZWU4MGYwOGJiZg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049ODM2NzVlZDI3Ng==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMi4y -dFlavor= -dAndroidArchs=android-arm android-arm64 android-x64 -dMinSdkVersion=24 android_aot_bundle_release_android-arm android_aot_bundle_release_android-arm64 android_aot_bundle_release_android-x64
+[        ] Successfully started process 'command '/home/codespace/flutter/bin/flutter''
+[ +596 ms] [ +101 ms] executing: uname -m
+[   +1 ms] [   +8 ms] Exit code 0 from: uname -m
+[   +2 ms] [        ] x86_64
+[        ] [  +10 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [   +2 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +2 ms] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +83 ms] [  +37 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] [  +69 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [   +1 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +395 ms] [ +378 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[   +2 ms] [  +31 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[   +1 ms] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +92 ms] [  +23 ms] Initializing file store
+[        ] [  +26 ms] Done initializing file store
+[ +299 ms] [ +278 ms] Skipping target: gen_dart_plugin_registrant
+[   +1 ms] [   +1 ms] Skipping target: gen_localizations
+[   +3 ms] [   +7 ms] Skipping target: dart_build
+[+1888 ms] [+1905 ms] Skipping target: install_code_assets
+[   +4 ms] [   +2 ms] kernel_snapshot_program: Starting due to {InvalidatedReasonKind.outputSetAddition: The following outputs were added to the output set: /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/app.dill}
+[   +3 ms] [  +24 ms] /home/codespace/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/codespace/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/codespace/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk_product/ --target=flutter --no-print-incremental-dependencies -DFLUTTER_VERSION=3.44.6 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=ee80f08bbf -DFLUTTER_ENGINE_REVISION=83675ed276 -DFLUTTER_DART_VERSION=3.12.2 -DFLUTTER_APP_FLAVOR= -Ddart.vm.profile=false -Ddart.vm.product=true --delete-tostring-package-uri=dart:ui --delete-tostring-package-uri=package:flutter --aot --tfa --target-os android --packages /workspaces/vakitim-app/.dart_tool/package_config.json --output-dill /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/app.dill --depfile /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/kernel_snapshot_program.d --source file:///workspaces/vakitim-app/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///workspaces/vakitim-app/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error package:vakitim_app/main.dart
+[+4791 ms] The message received from the daemon indicates that the daemon has disappeared.
+[   +4 ms] Build request sent: Build{id=f33f51e2-6f36-4b07-a536-18786c6d48e2, currentDir=/workspaces/vakitim-app/android}
+[   +3 ms] Attempting to read last messages from the daemon log...
+[        ] Daemon pid: 209735
+[        ]   log file: /home/codespace/.gradle/daemon/9.1.0/daemon-209735.out.log
+[        ] ----- Last 20 lines from daemon log file - daemon-209735.out.log -----
+[        ] [+1905 ms] Skipping target: install_code_assets
+[   +2 ms] [   +2 ms] kernel_snapshot_program: Starting due to {InvalidatedReasonKind.outputSetAddition: The following outputs were added to the output set: /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/app.dill}
+[   +1 ms] [  +24 ms] /home/codespace/flutter/bin/cache/dart-sdk/bin/dartaotruntime /home/codespace/flutter/bin/cache/dart-sdk/bin/snapshots/frontend_server_aot.dart.snapshot --sdk-root /home/codespace/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk_product/ --target=flutter --no-print-incremental-dependencies -DFLUTTER_VERSION=3.44.6 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=ee80f08bbf -DFLUTTER_ENGINE_REVISION=83675ed276 -DFLUTTER_DART_VERSION=3.12.2 -DFLUTTER_APP_FLAVOR= -Ddart.vm.profile=false -Ddart.vm.product=true --delete-tostring-package-uri=dart:ui --delete-tostring-package-uri=package:flutter --aot --tfa --target-os android --packages /workspaces/vakitim-app/.dart_tool/package_config.json --output-dill /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/app.dill --depfile /workspaces/vakitim-app/.dart_tool/flutter_build/baa8072ad69846cf3951ff879b208f9a/kernel_snapshot_program.d --source file:///workspaces/vakitim-app/.dart_tool/flutter_build/dart_plugin_registrant.dart --source package:flutter/src/dart_plugin_registrant.dart -Dflutter.dart_plugin_registrant=file:///workspaces/vakitim-app/.dart_tool/flutter_build/dart_plugin_registrant.dart --verbosity=error package:vakitim_app/main.dart
+[   +4 ms] Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+[        ] Remove shutdown hook failed
+[        ] java.lang.IllegalStateException: Shutdown in progress
+[        ] 	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:83)
+[        ] 	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:252)
+[        ] 	at org.gradle.process.internal.shutdown.ShutdownHooks.removeShutdownHook(ShutdownHooks.java:38)
+[        ] 	at org.gradle.process.internal.DefaultExecHandle.setEndStateInfo(DefaultExecHandle.java:209)
+[   +1 ms] 	at org.gradle.process.internal.DefaultExecHandle.aborted(DefaultExecHandle.java:400)
+[        ] 	at org.gradle.process.internal.ExecHandleRunner.completed(ExecHandleRunner.java:162)
+[        ] 	at org.gradle.process.internal.ExecHandleRunner.lambda$run$2(ExecHandleRunner.java:127)
+[        ] 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+[        ] 	at org.gradle.process.internal.ExecHandleRunner.run(ExecHandleRunner.java:125)
+[        ] 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[        ] 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+[        ] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+[        ] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+[        ] 	at java.base/java.lang.Thread.run(Thread.java:1474)----- End of the daemon log -----
+[  +76 ms] FAILURE: Build failed with an exception.
+[   +1 ms] * What went wrong:
+[   +1 ms] Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+[   +1 ms] * Try:
+[        ] > Run with --debug option to get more log output.
+[        ] > Run with --scan to generate a Build Scan (Powered by Develocity).
+[        ] > Get more help at https://help.gradle.org.
+[   +1 ms] * Exception is:
+[   +1 ms] org.gradle.launcher.daemon.client.DaemonDisappearedException: Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+[        ] 	at org.gradle.launcher.daemon.client.DaemonClient.handleDaemonDisappearance(DaemonClient.java:283)
+[        ] 	at org.gradle.launcher.daemon.client.DaemonClient.monitorBuild(DaemonClient.java:256)
+[   +1 ms] 	at org.gradle.launcher.daemon.client.DaemonClient.executeBuild(DaemonClient.java:209)
+[        ] 	at org.gradle.launcher.daemon.client.SingleUseDaemonClient.execute(SingleUseDaemonClient.java:63)
+[        ] 	at org.gradle.launcher.daemon.client.SingleUseDaemonClient.execute(SingleUseDaemonClient.java:37)
+[        ] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:56)
+[        ] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:167)
+[        ] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:377)
+[        ] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:341)
+[        ] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:74)
+[   +2 ms] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+[        ] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:97)
+[        ] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:40)
+[        ] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:50)
+[        ] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:27)
+[        ] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+[        ] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+[        ] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:489)
+[        ] 	at org.gradle.launcher.Main.doAction(Main.java:35)
+[        ] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:53)
+[        ] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[        ] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[   +1 ms] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:72)
+[        ] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:39)
+[        ] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:26)
+[   +1 ms] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[        ] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[        ] 	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+[        ] 	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+[        ] 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+[ +141 ms] Running Gradle task 'assembleRelease'... (completed in 71.7s)
+[   +9 ms] "flutter apk" took 78,715ms.
+[  +43 ms] Gradle task assembleRelease failed with exit code 1
+[   +1 ms] 
+           #0      throwToolExit (package:flutter_tools/src/base/common.dart:34:3)
+           #1      AndroidGradleBuilder.buildGradleApp (package:flutter_tools/src/android/gradle.dart:595:7)
+           <asynchronous suspension>
+           #2      AndroidGradleBuilder.buildApk (package:flutter_tools/src/android/gradle.dart:236:5)
+           <asynchronous suspension>
+           #3      BuildApkCommand.runCommand (package:flutter_tools/src/commands/build_apk.dart:132:5)
+           <asynchronous suspension>
+           #4      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1630:27)
+           <asynchronous suspension>
+           #5      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #6      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+           <asynchronous suspension>
+           #7      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:496:9)
+           <asynchronous suspension>
+           #8      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #9      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+           <asynchronous suspension>
+           #10     FlutterCommandRunner.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:307:33)
+           <asynchronous suspension>
+           #11     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:104:11)
+           <asynchronous suspension>
+           #12     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+           <asynchronous suspension>
+           #13     main (package:flutter_tools/executable.dart:103:3)
+           <asynchronous suspension>
+
+
+[   +1 ms] Running 1 shutdown hook
+[   +1 ms] Shutdown hooks complete
+[        ] exiting with code 1
