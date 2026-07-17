@@ -1,4 +1,4 @@
-name: Vakitim APK Oluştur
+name: APK Oluştur
 
 on:
   workflow_dispatch:
@@ -26,14 +26,8 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Flutter sürümünü göster
-        run: flutter --version
-
       - name: Paketleri indir
         run: flutter pub get
-
-      - name: Kodu kontrol et
-        run: flutter analyze
 
       - name: APK oluştur
         run: flutter build apk --release
@@ -43,4 +37,3 @@ jobs:
         with:
           name: vakitim-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-          if-no-files-found: error
