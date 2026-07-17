@@ -269,6 +269,20 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(Icons.refresh_rounded),
           ),
           IconButton(
+            tooltip: 'Bildirim testi',
+            onPressed: () async {
+              final messenger = ScaffoldMessenger.of(context);
+              await NotificationService.instance.showTestNotification();
+
+              if (!mounted) return;
+
+              messenger.showSnackBar(
+                const SnackBar(content: Text('Test bildirimi gönderildi.')),
+              );
+            },
+            icon: const Icon(Icons.notifications_active_rounded),
+          ),
+          IconButton(
             tooltip: 'Temayı değiştir',
             onPressed: widget.onThemeChanged,
             icon: Icon(
