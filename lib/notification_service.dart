@@ -7,128 +7,155 @@ import 'package:timezone/timezone.dart' as tz;
 class NotificationService {
   NotificationService._();
 
-  static final NotificationService instance = NotificationService._();
+    static final NotificationService instance = NotificationService._();
 
-  final FlutterLocalNotificationsPlugin _notifications =
-      FlutterLocalNotificationsPlugin();
+      final FlutterLocalNotificationsPlugin _notifications =
+            FlutterLocalNotificationsPlugin();
 
-  static const _channelId = 'prayer_times';
-  static const _channelName = 'Namaz Vakitleri';
-  static const _channelDescription =
-      'Namaz vakitleri için hatırlatma bildirimleri';
+              // Yeni kanal kimliği kullanıyoruz.
+                // Android eski kanal ayarlarını hafızada tuttuğu için önemlidir.
+                  static const String _channelId = 'prayer_times_adhan_v2';
+                    static const String _channelName = 'Namaz Vakitleri';
+                      static const String _channelDescription =
+                            'Namaz vakitleri için ezan sesli bildirimler';
 
-  Future<void> initialize() async {
-    if (kIsWeb) return;
+                              static const RawResourceAndroidNotificationSound _adhanSound =
+                                    RawResourceAndroidNotificationSound('adhan');
 
-    tz.initializeTimeZones();
+                                      Future<void> initialize() async {
+                                          if (kIsWeb) return;
 
-    final timezoneInfo = await FlutterTimezone.getLocalTimezone();
-    tz.setLocalLocation(tz.getLocation(timezoneInfo.identifier));
+                                              tz.initializeTimeZones();
 
-    const androidSettings = AndroidInitializationSettings(
-      '@mipmap/ic_launcher',
-    );
+                                                  final timezoneInfo = await FlutterTimezone.getLocalTimezone();
+                                                      tz.setLocalLocation(tz.getLocation(timezoneInfo.identifier));
 
-    const initializationSettings = InitializationSettings(
-      android: androidSettings,
-    );
+                                                          const androidSettings = AndroidInitializationSettings(
+                                                                '@mipmap/ic_launcher',
+                                                                    );
 
-    await _notifications.initialize(settings: initializationSettings);
+                                                                        const initializationSettings = InitializationSettings(
+                                                                              android: androidSettings,
+                                                                                  );
 
-    await _notifications
-        .resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin
-        >()
-        ?.requestNotificationsPermission();
-  }
+                                                                                      await _notifications.initialize(
+                                                                                            settings: initializationSettings,
+                                                                                                );
 
-  Future<void> showTestNotification() async {
-    if (kIsWeb) return;
+                                                                                                    final androidPlugin =
+                                                                                                            _notifications.resolvePlatformSpecificImplementation<
+                                                                                                                        AndroidFlutterLocalNotificationsPlugin>();
 
-    const androidDetails = AndroidNotificationDetails(
-      _channelId,
-      _channelName,
-      channelDescription: _channelDescription,
-      importance: Importance.max,
-      priority: Priority.high,
-      enableVibration: true,
-    );
+                                                                                                                            await androidPlugin?.requestNotificationsPermission();
 
-    const details = NotificationDetails(android: androidDetails);
+                                                                                                                                // Ezan sesli bildirim kanalını uygulama açılırken oluşturur.
+                                                                                                                                    const channel = AndroidNotificationChannel(
+                                                                                                                                          _channelId,
+                                                                                                                                                _channelName,
+                                                                                                                                                      description: _channelDescription,
+                                                                                                                                                            importance: Importance.max,
+                                                                                                                                                                  playSound: true,
+                                                                                                                                                                        sound: _adhanSound,
+                                                                                                                                                                              enableVibration: true,
+                                                                                                                                                                                    audioAttributesUsage: AudioAttributesUsage.alarm,
+                                                                                                                                                                                        );
 
-    await _notifications.show(
-      id: 1,
-      title: 'Vakitim',
-      body: 'Bildirimler başarıyla çalışıyor.',
-      notificationDetails: details,
-    );
-  }
+                                                                                                                                                                                            await androidPlugin?.createNotificationChannel(channel);
+                                                                                                                                                                                              }
 
-  Future<void> schedulePrayerNotifications({
-    required Map<String, String> times,
-    required Map<String, String> names,
-  }) async {
-    if (kIsWeb) return;
+                                                                                                                                                                                                AndroidNotificationDetails _androidDetails() {
+                                                                                                                                                                                                    return const AndroidNotificationDetails(
+                                                                                                                                                                                                          _channelId,
+                                                                                                                                                                                                                _channelName,
+                                                                                                                                                                                                                      channelDescription: _channelDescription,
+                                                                                                                                                                                                                            importance: Importance.max,
+                                                                                                                                                                                                                                  priority: Priority.high,
+                                                                                                                                                                                                                                        playSound: true,
+                                                                                                                                                                                                                                              sound: _adhanSound,
+                                                                                                                                                                                                                                                    enableVibration: true,
+                                                                                                                                                                                                                                                          audioAttributesUsage: AudioAttributesUsage.alarm,
+                                                                                                                                                                                                                                                                category: AndroidNotificationCategory.alarm,
+                                                                                                                                                                                                                                                                    );
+                                                                                                                                                                                                                                                                      }
 
-    const ids = {
-      'Fajr': 101,
-      'Dhuhr': 102,
-      'Asr': 103,
-      'Maghrib': 104,
-      'Isha': 105,
-    };
+                                                                                                                                                                                                                                                                        Future<void> showTestNotification() async {
+                                                                                                                                                                                                                                                                            if (kIsWeb) return;
 
-    const androidDetails = AndroidNotificationDetails(
-      _channelId,
-      _channelName,
-      channelDescription: _channelDescription,
-      importance: Importance.max,
-      priority: Priority.high,
-      enableVibration: true,
-    );
+                                                                                                                                                                                                                                                                                final details = NotificationDetails(
+                                                                                                                                                                                                                                                                                      android: _androidDetails(),
+                                                                                                                                                                                                                                                                                          );
 
-    const details = NotificationDetails(android: androidDetails);
-    final now = tz.TZDateTime.now(tz.local);
+                                                                                                                                                                                                                                                                                              await _notifications.show(
+                                                                                                                                                                                                                                                                                                    id: 1,
+                                                                                                                                                                                                                                                                                                          title: 'Vakitim',
+                                                                                                                                                                                                                                                                                                                body: 'Ezan sesi başarıyla çalışıyor.',
+                                                                                                                                                                                                                                                                                                                      notificationDetails: details,
+                                                                                                                                                                                                                                                                                                                          );
+                                                                                                                                                                                                                                                                                                                            }
 
-    for (final entry in ids.entries) {
-      final timeText = times[entry.key];
-      if (timeText == null) continue;
+                                                                                                                                                                                                                                                                                                                              Future<void> schedulePrayerNotifications({
+                                                                                                                                                                                                                                                                                                                                  required Map<String, String> times,
+                                                                                                                                                                                                                                                                                                                                      required Map<String, String> names,
+                                                                                                                                                                                                                                                                                                                                        }) async {
+                                                                                                                                                                                                                                                                                                                                            if (kIsWeb) return;
 
-      final parts = timeText.split(':');
-      if (parts.length != 2) continue;
+                                                                                                                                                                                                                                                                                                                                                const ids = <String, int>{
+                                                                                                                                                                                                                                                                                                                                                      'Fajr': 101,
+                                                                                                                                                                                                                                                                                                                                                            'Dhuhr': 102,
+                                                                                                                                                                                                                                                                                                                                                                  'Asr': 103,
+                                                                                                                                                                                                                                                                                                                                                                        'Maghrib': 104,
+                                                                                                                                                                                                                                                                                                                                                                              'Isha': 105,
+                                                                                                                                                                                                                                                                                                                                                                                  };
 
-      final hour = int.tryParse(parts[0]);
-      final minute = int.tryParse(parts[1]);
-      if (hour == null || minute == null) continue;
+                                                                                                                                                                                                                                                                                                                                                                                      final details = NotificationDetails(
+                                                                                                                                                                                                                                                                                                                                                                                            android: _androidDetails(),
+                                                                                                                                                                                                                                                                                                                                                                                                );
 
-      final scheduledTime = tz.TZDateTime(
-        tz.local,
-        now.year,
-        now.month,
-        now.day,
-        hour,
-        minute,
-      );
+                                                                                                                                                                                                                                                                                                                                                                                                    final now = tz.TZDateTime.now(tz.local);
 
-      await _notifications.cancel(id: entry.value);
+                                                                                                                                                                                                                                                                                                                                                                                                        for (final entry in ids.entries) {
+                                                                                                                                                                                                                                                                                                                                                                                                              final timeText = times[entry.key];
 
-      if (!scheduledTime.isAfter(now)) continue;
+                                                                                                                                                                                                                                                                                                                                                                                                                    if (timeText == null) continue;
 
-      final prayerName = names[entry.key] ?? 'Namaz';
+                                                                                                                                                                                                                                                                                                                                                                                                                          final parts = timeText.split(':');
 
-      await _notifications.zonedSchedule(
-        id: entry.value,
-        title: '$prayerName vakti',
-        body: '$prayerName namazının vakti geldi.',
-        scheduledDate: scheduledTime,
-        notificationDetails: details,
-        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      );
-    }
-  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                if (parts.length != 2) continue;
 
-  Future<void> cancelAll() async {
-    if (kIsWeb) return;
-    await _notifications.cancelAll();
-  }
-}
+                                                                                                                                                                                                                                                                                                                                                                                                                                      final hour = int.tryParse(parts[0]);
+                                                                                                                                                                                                                                                                                                                                                                                                                                            final minute = int.tryParse(parts[1]);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  if (hour == null || minute == null) continue;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        final scheduledTime = tz.TZDateTime(
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                tz.local,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        now.year,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                now.month,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        now.day,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                hour,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        minute,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              );
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    await _notifications.cancel(id: entry.value);
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          if (!scheduledTime.isAfter(now)) continue;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                final prayerName = names[entry.key] ?? 'Namaz';
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      await _notifications.zonedSchedule(
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              id: entry.value,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      title: '$prayerName vakti',
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              body: '$prayerName namazının vakti geldi.',
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      scheduledDate: scheduledTime,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              notificationDetails: details,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Future<void> cancelAll() async {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        if (kIsWeb) return;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            await _notifications.cancelAll();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
