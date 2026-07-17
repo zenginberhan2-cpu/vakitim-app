@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
+import 'notification_service.dart';
 
 void main() => runApp(const VakitimApp());
 
@@ -189,6 +190,10 @@ class _HomePageState extends State<HomePage> {
         _hijriDate = '${hijri['day']} ${month['en']} ${hijri['year']}';
         _loading = false;
       });
+      await NotificationService.instance.schedulePrayerNotifications(
+        times: loadedTimes,
+        names: prayerNames,
+      );
     } catch (error) {
       if (!mounted) return;
 
