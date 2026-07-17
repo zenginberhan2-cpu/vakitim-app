@@ -6,7 +6,11 @@ import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'notification_service.dart';
 
-void main() => runApp(const VakitimApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await NotificationService.instance.initialize();
+  runApp(const VakitimApp());
+}
 
 class VakitimApp extends StatefulWidget {
   const VakitimApp({super.key});
